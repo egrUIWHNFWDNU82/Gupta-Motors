@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Electronics</title>
+
+<link rel="icon" href="GM.png">
+
+<style>
+body{
+  margin:0;
+  background:#0f172a;
+  color:white;
+  font-family:Poppins;
+}
+
+/* HEADER */
+header{
+  display:flex;
+  align-items:center;
+  padding:15px;
+  background:#020617;
+}
+
+header img{
+  width:40px;
+  margin-right:10px;
+}
+
+/* TITLE */
+h1{
+  text-align:center;
+  margin:20px;
+}
+
+/* CONTAINER */
+.container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:25px;
+  padding:30px;
+}
+
+/* CARD */
+.card{
+  width:220px;
+  padding:20px;
+  text-align:center;
+  background:rgba(255,255,255,0.05);
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card img{
+  width:80px;
+  margin-bottom:10px;
+}
+
+/* BACK BUTTON */
+.back-btn{
+  display:block;
+  width:max-content;
+  margin:30px auto;
+  padding:10px 20px;
+  border-radius:20px;
+  background:#38bdf8;
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.back-btn:hover{
+  background:#0284c7;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="GM.png"> Gupta Motors
+</header>
+
+<h1>Our Partner Brands</h1>
+
+<div class="container">
+
+  <div class="card">
+    <img src="bajaj.jpeg">
+    <h3>Bajaj</h3>
+    <p>Trusted electrical appliances brand.</p>
+  </div>
+
+  <div class="card">
+    <img src="oreint.png">
+    <h3>Orient</h3>
+    <p>Fans and lighting solutions.</p>
+  </div>
+
+  <div class="card">
+    <img src="oppo.png">
+    <h3>Oppo</h3>
+    <p>Smartphone innovation leader.</p>
+  </div>
+
+  <div class="card">
+    <img src="lyne.png">
+    <h3>Lyne</h3>
+    <p>Mobile accessories brand.</p>
+  </div>
+
+  <div class="card">
+    <img src="rr.jpeg">
+    <h3>RR</h3>
+    <p>Quality wires and cables.</p>
+  </div>
+
+</div>
+
+<!-- ✅ BACK BUTTON -->
+<a href="services.html" class="back-btn">⬅ Back to Services</a>
+
+</body>
+</html>

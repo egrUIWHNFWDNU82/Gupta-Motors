@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Services - Gupta Motors</title>
+
+<link rel="icon" href="GM.png">
+
+<style>
+body{
+  margin:0;
+  background:#0f172a;
+  color:white;
+  font-family:Poppins;
+}
+
+/* HEADER */
+header{
+  display:flex;
+  align-items:center;
+  padding:15px;
+  background:#020617;
+}
+
+header img{
+  width:40px;
+  margin-right:10px;
+}
+
+/* TITLE */
+h1{
+  text-align:center;
+  margin:20px;
+  color:#38bdf8;
+}
+
+/* CONTAINER */
+.container{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+  padding:30px;
+}
+
+/* CARD */
+.container a{
+  text-decoration:none;
+  color:white;
+}
+
+.card{
+  width:250px;
+  padding:20px;
+  border-radius:12px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+  transition:0.3s;
+  text-align:center;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  border-color:#38bdf8;
+}
+
+/* BACK BUTTON */
+.back-btn{
+  display:block;
+  width:max-content;
+  margin:30px auto;
+  padding:10px 20px;
+  border-radius:20px;
+  background:#38bdf8;
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.back-btn:hover{
+  background:#0284c7;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="GM.png"> Gupta Motors
+</header>
+
+<h1>Our Services</h1>
+
+<div class="container">
+
+  <!-- ELECTRONICS -->
+  <a href="electronic.html">
+    <div class="card">
+      <h3>Electronics</h3>
+      <p>Wholesale electronics from top brands.</p>
+    </div>
+  </a>
+
+  <!-- REPAIR -->
+  <div class="card">
+    <h3>Repair</h3>
+    <p>Fast and reliable repair services.</p>
+  </div>
+
+  <!-- SUPPORT -->
+  <div class="card">
+    <h3>Support</h3>
+    <p>24/7 customer support.</p>
+  </div>
+
+</div>
+
+<!-- ✅ BACK TO HOME -->
+<a href="index.html" class="back-btn">⬅ Back to Home</a>
+
+</body>
+</html>
