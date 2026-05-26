@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VG Sons - OPPO Catalogue</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+    padding:30px;
+    overflow-x:hidden;
+}
+
+/* Background Glow */
+
+body::before{
+    content:'';
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:#00ff88;
+    filter:blur(180px);
+    top:-150px;
+    right:-100px;
+    opacity:0.15;
+    z-index:-1;
+}
+
+body::after{
+    content:'';
+    position:fixed;
+    width:400px;
+    height:400px;
+    background:#00bfff;
+    filter:blur(180px);
+    bottom:-120px;
+    left:-100px;
+    opacity:0.12;
+    z-index:-1;
+}
+
+/* Heading */
+
+.main-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.main-title h1{
+    font-size:48px;
+    font-weight:700;
+    letter-spacing:1px;
+    background:linear-gradient(to right,#ffffff,#8cffc1);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.main-title p{
+    color:#aaaaaa;
+    margin-top:10px;
+    font-size:16px;
+}
+
+/* Grid */
+
+.catalogue{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:28px;
+}
+
+/* Card */
+
+.card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:28px;
+    overflow:hidden;
+    backdrop-filter:blur(12px);
+    transition:0.4s ease;
+    position:relative;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.02);
+    border-color:#00ff88;
+    box-shadow:
+    0 0 30px rgba(0,255,136,0.15),
+    0 0 60px rgba(0,255,136,0.08);
+}
+
+/* Image Slider */
+
+.phone-images{
+    display:flex;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
+    background:linear-gradient(to bottom,#161616,#0f0f0f);
+}
+
+.phone-images::-webkit-scrollbar{
+    display:none;
+}
+
+.phone-images img{
+    width:100%;
+    min-width:100%;
+    height:340px;
+    object-fit:contain;
+    padding:25px;
+    scroll-snap-align:center;
+    transition:0.4s;
+}
+
+.card:hover img{
+    transform:scale(1.03);
+}
+
+/* Info */
+
+.info{
+    padding:24px;
+}
+
+.info h2{
+    font-size:28px;
+    font-weight:600;
+    margin-bottom:12px;
+}
+
+.price{
+    color:#00ff88;
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.desc{
+    color:#bdbdbd;
+    line-height:1.6;
+    font-size:15px;
+}
+
+/* Premium Line */
+
+.card::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:2px;
+    background:linear-gradient(to right,transparent,#00ff88,transparent);
+    bottom:0;
+    left:0;
+    opacity:0.6;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    .main-title h1{
+        font-size:34px;
+    }
+
+    .catalogue{
+        gap:20px;
+    }
+
+    .phone-images img{
+        height:260px;
+    }
+
+    .info h2{
+        font-size:22px;
+    }
+
+    .price{
+        font-size:20px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="main-title">
+    <h1>OPPO Smartphone Catalogue</h1>
+    <p>Premium Collection by VG Sons</p>
+</div>
+
+<div class="catalogue">
+
+<!-- OPPO K14 5G -->
+<div class="card">
+    <div class="phone-images">
+        <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202603/06/YBlDw5PWIJCLrzea.png">
+        <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202603/06/EKwj5hhxX01Smjdl.png">
+        <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202603/06/8wsLk43mLD3LePZg.png">
+    </div>
+
+    <div class="info">
+        <h2>OPPO K14 5G</h2>
+        <p class="price">₹19,999</p>
+        <p class="desc">More Power. Less Lag.</p>
+    </div>
+</div>
+
+<!-- OPPO K14x 5G -->
+<div class="card">
+    <div class="phone-images">
+        <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202602/09/f6o8r3QQ1LD7VX8F.png">
+        <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202602/09/I4CBI8yiDZxa5koq.png">
+    </div>
+
+    <div class="info">
+        <h2>OPPO K14x 5G</h2>
+        <p class="price">₹14,999</p>
+        <p class="desc">More Power. Less Lag.</p>
+    </div>
+</div>
+
+<!-- OPPO K13 Turbo Pro 5G -->
+<div class="card">
+    <div class="phone-images">
+        <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202508/11/dlLoPX0vGzqpW4FE.png">
+        <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202508/11/p1plBVOTOHcV3ZNI.png">
+        <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202508/11/PB5NY8ZDLWpomMAr.png">
+    </div>
+
+    <div class="info">
+        <h2>OPPO K13 Turbo Pro 5G</h2>
+        <p class="price">Coming Soon</p>
+        <p class="desc">India's Only Smartphone with Cooling Fan</p>
+    </div>
+</div>
+
+<!-- OPPO K13 Turbo 5G -->
+<div class="card">
+    <div class="phone-images">
+        <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202508/11/yuIPKF2u6NPTooUk.png">
+        <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202508/11/bZu6kH8SL9h4eLhD.png">
+        <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202508/11/ssZ5InFIyN4amAIk.png">
+    </div>
+
+    <div class="info">
+        <h2>OPPO K13 Turbo 5G</h2>
+        <p class="price">₹27,999</p>
+        <p class="desc">India's Only Smartphone with Cooling Fan</p>
+    </div>
+</div>
+
+<!-- OPPO K13x 5G -->
+<div class="card">
+    <div class="phone-images">
+        <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202509/04/Kr1AcfhHo8hOKK6j.png">
+        <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202506/13/jE39gYUzawQvboWs.png">
+        <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202506/13/2jgtjieaVzI2SnCz.png">
+    </div>
+
+    <div class="info">
+        <h2>OPPO K13x 5G</h2>
+        <p class="price">Coming Soon</p>
+        <p class="desc">Live Unstoppable</p>
+    </div>
+</div>
+
+<!-- OPPO K13 5G -->
+<div class="card">
+    <div class="phone-images">
+        <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202504/11/Sf3mt3qF5idRpv5z.png">
+        <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202504/11/D74nA7qXxr555Hwa.png">
+    </div>
+
+    <div class="info">
+        <h2>OPPO K13 5G</h2>
+        <p class="price">₹22,999</p>
+        <p class="desc">Live Unstoppable</p>
+    </div>
+</div>
+
+<!-- OPPO K12x 5G -->
+<div class="card">
+    <div class="phone-images">
+        <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202407/25/dXOJDVgva9KGAJsc.png">
+        <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202407/25/XR1jPDUegtdkCOl5.png">
+        <img src="https://opsg-img-cdn-gl.heytapimg.com/epb/202409/24/eg4Cb3u6wCN1ZLLl.png">
+    </div>
+
+    <div class="info">
+        <h2>OPPO K12x 5G</h2>
+        <p class="price">₹16,999</p>
+        <p class="desc">Live Unstoppable</p>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
